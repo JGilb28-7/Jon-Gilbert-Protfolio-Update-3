@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS contactlist_DB;
+CREATE DATABASE contactlist_DB;

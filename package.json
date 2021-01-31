@@ -1,0 +1,27 @@
+{
+  "name": "jon-gilbert-protfolio-update-3",
+  "version": "1.0.0",
+  "description": "Portfolio Update",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JGilb28-7/Jon-Gilbert-Protfolio-Update-3.git"
+  },
+  "author": "Jonathan Gilbert & JSG Consulting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JGilb28-7/Jon-Gilbert-Protfolio-Update-3/issues"
+  },
+  "homepage": "https://github.com/JGilb28-7/Jon-Gilbert-Protfolio-Update-3#readme",
+  "dependencies": {
+    "2": "^3.0.0",
+    "bootstrap": "^5.0.0-beta1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.5.0"
+  }
+}
