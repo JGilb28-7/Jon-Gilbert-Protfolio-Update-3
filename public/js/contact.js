@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var contactForm = $(".contact");
+    var contactForm = $ ("#contact");
     var firstNameInput = $("#firstName-input");
     var lastNameInput = $("#lastName-input");
     var emailInput = $("#email-input");
