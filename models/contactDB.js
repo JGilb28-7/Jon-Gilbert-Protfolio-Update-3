@@ -1,8 +1,8 @@
-var bcrypt = require("bcryptjs");
-const { validateSubfields } = require("sequelize-validate-subfields");
+//var bcrypt = require("bcryptjs");
+//const { validateSubfields } = require("sequelize-validate-subfields");
 
 module.exports = function (sequelize, DataTypes) {
-  var Contact = sequelize.define("Contact", {
+  var ContactDB = sequelize.define("ContactDB", {
     firstname: {
       type: DataTypes.STRING,
       validate: {
@@ -46,23 +46,14 @@ module.exports = function (sequelize, DataTypes) {
         args: [/.+@.+\..+/, "Please enter a valid e-mail address"],
       },
     },
-   Message: {
+    Reason: {
        type: DataTypes.STRING,
        allowNull: false
        
    }
   });
 
-  User.associate = function(models) {
-    User.hasOne(models.Accounts, {
-      foreignKey:{
-      
-        type: DataTypes.UUID
-      }
-    });
-  };
-
-  User.prototype.validPassword = function (password) {
+  /*User.prototype.validPassword = function (password) {
     return bcrypt.compareSync(password, this.password);
   };
   User.addHook("beforeCreate", function (user) {
@@ -71,6 +62,6 @@ module.exports = function (sequelize, DataTypes) {
       bcrypt.genSaltSync(10),
       null
     );
-  });
-  return Contact;
+  });*/
+  return ContactDB;
 };
